@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title><%= @title || "Is That What She Said?" %></title>
+  </head>
+  <body>
+    <form action="/" class="form-inline" method="POST">
+      <input type="text" placeholder="Did she Say that?" name="content">
+      <button type="submit" class="btn">Did She?</button>
+    </form>
+      <%= yield %>
+  </body>
+</html>
